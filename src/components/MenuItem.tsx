@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const MenuItem = ({title, address, Icon}) => {
+const MenuItem = ({title, address, Icon}: any) => {
   return (
     <Link href={address} className='hover:text-amber-500'>
         <Icon className='text-2xl sm:hidden'/>
