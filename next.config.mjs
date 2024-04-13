@@ -1,4 +1,15 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+// next.config.mjs
 
-export default nextConfig;
+const config = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "m.media-amazon.com",
+        pathname: "**",
+      },
+    ],
+  },
+};
+
+export default config;
