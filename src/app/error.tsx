@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect } from "react";
 
 const ErrorComponent = ({ error, reset }: any) => {
