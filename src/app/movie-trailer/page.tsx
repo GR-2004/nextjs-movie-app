@@ -1,10 +1,8 @@
-"use client";
-import React, { useEffect, useState } from "react";
+import React, { Suspense } from "react";
 import axios from "axios";
 import TrailerResult from "@/components/TrailerResult";
 
 const Page = async () => {
-  const axios = require("axios");
 
   const options = {
     method: "GET",
@@ -23,9 +21,9 @@ const Page = async () => {
   }
 
   return (
-    <>
+    <Suspense fallback={<div>Loading...</div>}>
       <TrailerResult result={res} />
-    </>
+    </Suspense>
   );
 };
 
