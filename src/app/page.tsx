@@ -4,13 +4,13 @@ const API_KEY = process.env.API_KEY;
 
 const Home = async ({ searchParams }: any) => {
 
-  const genre = searchParams.genre || "fetchTrending";
+  const genre = searchParams.genre || "most-popular-movies";
 
   // const axios = require('axios');
 
 const options = {
   method: 'GET',
-  url: `https://moviesverse1.p.rapidapi.com/${genre === "fetchTopRated" ? "top-250-movies" : "most-popular-movies"}`,
+  url: `https://moviesverse1.p.rapidapi.com/${genre}`,
   params: {
     genre: '<REQUIRED>'
   },

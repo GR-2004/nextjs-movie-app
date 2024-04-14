@@ -3,6 +3,8 @@ import Link from 'next/link'
 import React from 'react'
 import {FiThumbsUp} from "react-icons/fi"
 
+
+
 const Card = ({result}:any) => {
   return (
     <div className='group cursor-pointer sm:hover:shadow-slate-400 sm:shadow-md rounded-lg sm:border sm:border-slate-400 sm:m-2 transition-shadow duration-200'>
